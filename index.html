@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    .shimmer {
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite;
+    }
+
+    .hamburger-line {
+      transition: all 0.3s ease;
+    }
+    .hamburger.open .line-1 {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .hamburger.open .line-2 {
+      opacity: 0;
+    }
+    .hamburger.open .line-3 {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-white-900">
+
+<div class="relative m-6 p-6 rounded-3xl overflow-hidden min-h-[600px]"
+       style="background: linear-gradient(135deg, #ebe9ee, #5a5abc, #cdccdc, #706aea);">
+
+    <div class="absolute inset-0 shimmer opacity-30"></div>
+
+    <div class="absolute -top-10 -left-2 z-10">
+        <img src="nme.png" style="width: 160px; height: 200px;" alt="">
+    </div>
+
+<div class="flex justify-end mt-4 relative items-center space-x-2 pr-4 md:pr-6 z-10">
+
+      <nav class="hidden md:block backdrop-blur-xl bg-white/10 shadow-2xl rounded-full py-2 px-4 border border-white/20"
+           style="width: 45%;">
+        <div class="flex items-center h-14">
+          <ul class="flex flex-grow justify-between w-full">
+            <li class="flex-1 text-center">
+              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">Home</a>
+            </li>
+            <li class="flex-1 text-center">
+              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">About</a>
+            </li>
+            <li class="flex-1 text-center">
+              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">Blogs</a>
+            </li>
+            <li class="flex-1 text-center">
+              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">FAQ's</a>
+            </li>
+            <li class="flex-1 text-center">
+              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">Service</a>
+            </li>
+            <li class="flex-1 text-center">
+              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-12 h-12 rounded-xl backdrop-blur-xl bg-white/20 hover:bg-white/30 transition-all shadow-lg border border-white/30 hamburger focus:outline-none">
+        <span class="hamburger-line line-1 w-6 h-0.5 bg-white rounded-full mb-1.5"></span>
+        <span class="hamburger-line line-2 w-6 h-0.5 bg-white rounded-full mb-1.5"></span>
+        <span class="hamburger-line line-3 w-6 h-0.5 bg-white rounded-full"></span>
+      </button>
+
+
+      <button class="hidden md:flex bg-gradient-to-br from-blue-500 to-blue-500 hover:from-blue-300 hover:to-blue-400 text-white w-12 h-12 rounded-full items-center justify-center shadow-2xl hover:scale-110  border-2 border-white/30">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8-1.46 0-2.826-.306-4.026-.845L3 20l1.845-4.026A8.959 8.959 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+      </button>
+
+    </div>
+
+
+    <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-1 backdrop-blur-xl bg-white/10 rounded-2xl shadow-2xl p-4 mx-6 border border-white/20">
+      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">Home</a>
+      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">About</a>
+      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">Blogs</a>
+      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">FAQ's</a>
+      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">Service</a>
+      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">Contact</a>
+    </div>
+
+<div>
+  <section class="max-w-3xl mx-auto mt-40 px-4 relative z-10 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-black mb-3">
+      N-ME <span class="text-blue-600">Blog</span>
+    </h1>
+    <p class="text-black/90 text-lg font-semibold leading-relaxed mx-auto">
+      Insights, stories, and tips for local businesses & smart shoppers
+    </p>
+
+
+    <div class="mt-6 flex flex-col items-center md:flex-row md:justify-center gap-3">
+  
+
+        <div class="relative w-80">
+    <i class="fa fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+
+    <input
+      type="search"
+      placeholder="Search articles..."
+      class="w-80 pl-12 pr-4 py-3 rounded-3xl border border-gray-300
+             focus:outline-none focus:ring-2 focus:ring-blue-500
+             shadow-sm text-gray-700"/>
+  </div>
+
+
+  <button
+    class="w-40 md:w-36 px-6 py-3 rounded-3xl bg-blue-500 text-white font-semibold
+           hover:bg-blue-700 transition">
+    Search
+  </button>
+
+</div>
+
+
+  </section>
+</div>
+
+
+  </div>
+
+
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      btn.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>
