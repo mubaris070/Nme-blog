@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Premium Navbar</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
@@ -13,7 +25,7 @@
       100% { background-position: 200% center; }
     }
     .shimmer {
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
       background-size: 200% 100%;
       animation: shimmer 3s infinite;
     }
@@ -35,8 +47,8 @@
 <body class="min-h-screen overflow-x-hidden" style="background-image: linear-gradient(135deg, rgba(49, 49, 49,0.07) 0%, rgba(49, 49, 49,0.07) 12.5%,rgba(76, 76, 76,0.07) 12.5%, rgba(76, 76, 76,0.07) 25%,rgba(102, 102, 102,0.07) 25%, rgba(102, 102, 102,0.07) 37.5%,rgba(129, 129, 129,0.07) 37.5%, rgba(129, 129, 129,0.07) 50%,rgba(155, 155, 155,0.07) 50%, rgba(155, 155, 155,0.07) 62.5%,rgba(182, 182, 182,0.07) 62.5%, rgba(182, 182, 182,0.07) 75%,rgba(208, 208, 208,0.07) 75%, rgba(208, 208, 208,0.07) 87.5%,rgba(235, 235, 235,0.07) 87.5%, rgba(235, 235, 235,0.07) 100%),linear-gradient(45deg, rgba(5, 5, 5,0.07) 0%, rgba(5, 5, 5,0.07) 12.5%,rgba(39, 39, 39,0.07) 12.5%, rgba(39, 39, 39,0.07) 25%,rgba(73, 73, 73,0.07) 25%, rgba(73, 73, 73,0.07) 37.5%,rgba(107, 107, 107,0.07) 37.5%, rgba(107, 107, 107,0.07) 50%,rgba(141, 141, 141,0.07) 50%, rgba(141, 141, 141,0.07) 62.5%,rgba(175, 175, 175,0.07) 62.5%, rgba(175, 175, 175,0.07) 75%,rgba(209, 209, 209,0.07) 75%, rgba(209, 209, 209,0.07) 87.5%,rgba(243, 243, 243,0.07) 87.5%, rgba(243, 243, 243,0.07) 100%),linear-gradient(90deg, #ffffff,#ffffff);">
   <div class=" p-2 md:p-4 lg:p-6">
 
-<div class="relative m-6 p-6 rounded-3xl overflow-hidden min-h-[600px]"
-       style="background: linear-gradient(135deg, #ebe9ee, #5a5abc, #cdccdc, #706aea);">
+<div class="relative m-4 p-6 rounded-3xl overflow-hidden min-h-[600px]"
+       style="background: linear-gradient(135deg, #E4EEFF,#7D99FF);">
 
     <div class="absolute inset-0 shimmer opacity-30"></div>
 
@@ -46,27 +58,27 @@
 
 <div class="flex justify-end mt-4 relative items-center space-x-2 pr-4 md:pr-6 z-10">
 
-      <nav class="hidden md:block backdrop-blur-xl bg-white/10 shadow-2xl rounded-full py-2 px-4 border border-white/20"
-           style="width: 45%;">
+      <nav class="hidden md:block backdrop-blur-xl bg-white/10 shadow-2xl rounded-full py-1 px-4 border border-white/50"
+           style="width: 45%;background: linear-gradient(#DDE8FF);">
         <div class="flex items-center h-14">
           <ul class="flex flex-grow justify-between w-full">
             <li class="flex-1 text-center">
-              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">Home</a>
+              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">Home</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">About</a>
+              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">About</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">Blogs</a>
+              <a href="#" class="text-blue-600 hover:text-blue-600 hover:scale-110 transition-all inline-block">Blogs</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">FAQ's</a>
+              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">FAQ's</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">Service</a>
+              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">Service</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-white/90 hover:text-white hover:scale-110 transition-all inline-block">Contact</a>
+              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">Contact</a>
             </li>
           </ul>
         </div>
@@ -102,11 +114,11 @@
 
 <div>
   <section class="max-w-3xl mx-auto mt-40 px-4 relative z-10 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold text-black mb-3">
-      N-ME <span class="text-blue-600">Blog</span>
+    <h1 class="font-poppins text-4xl md:text-5xl font-semibold text-black mb-3">
+      N-ME <span class="font-poppins text-blue-600">Blog</span>
     </h1>
-    <p class="text-black/90 text-lg font-semibold leading-relaxed mx-auto">
-      Insights, stories, and tips for local businesses & smart shoppers
+    <p class=" text-black/90 font-semibold leading-relaxed mx-auto">
+      Insights, stories, and tips for local businesses & smart shoppers.
     </p>
 
 
@@ -120,15 +132,15 @@
       type="search"
       placeholder="Search articles..."
       class="w-80 pl-12 pr-4 py-3 rounded-3xl border border-gray-300
-             focus:outline-none focus:ring-2 focus:ring-blue-500
+             focus:outline-none
              shadow-sm text-gray-700"/>
   </div>
 
 
 <button
   class="w-40 md:w-36 px-6 py-3 rounded-3xl text-white font-semibold
-         bg-gradient-to-b from-blue-500 to-blue-700
-         hover:from-blue-600 hover:to-blue-300
+           bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+         hover:to-[#D9F0FF]
          
          transition-colors duration-300 ease-in-out">
   Search
@@ -144,38 +156,41 @@
             w-[85%] md:w-6/12 mx-auto">
   
   <img 
-    class="rounded-3xl w-full h-62 md:h-[55vh]"
-    src="office.png" 
+    class="rounded-3xl w-full h-60 md:h-[55vh] object-cover"
+    src="Consultant.png" 
     alt=""
   >
 
 </div>
 
 
+
+
+
   <div class="w-full md:w-5/12 p-4 md:p-6 mt-4 md:mt-12 space-y-6">
     
-    <p class="text-blue-600 text-sm font-semibold uppercase tracking-wide">
+    <p class="text-blue-600 font-normal  ">
       New Post
     </p>
 
-    <h2 class="text-3xl font-bold text-gray-900 leading-snug">
+    <h2 class="font-poppins text-2xl font-bold text-gray-900 leading-normal">
       Find Professional Consultancy Services Near Me
     </h2>
 
-    <h4 class="text-2xl font-medium text-black">
+    <h4 class="font-poppins text-2xl font-medium text-black">
       Consultancy Services
     </h4>
 
-    <p class="text-black leading-relaxed">
+    <p class="font-poppins text-black leading-relaxed">
       Is your fence worn out or damaged? Locating reputable fence repair professionals
       in your neighborhood is simple and quick with...
     </p>
 
     <div class="flex items-center gap-4 pt-2">
       <button
-        class="px-6 py-2 rounded-full text-sm font-semibold text-white
-               bg-gradient-to-r from-blue-500 to-blue-700
-               hover:from-blue-400 hover:to-blue-600
+        class="px-10 py-3 rounded-full text-sm font-semibold text-white
+                 bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+         hover:to-[#D9F0FF]
                transition-colors duration-300">
         Read More
       </button>
@@ -191,8 +206,189 @@
 
 
 
+<div class="flex flex-wrap justify-between  px-4 m-5">
+
+  <div class="rounded-3xl p-1 w-full md:w-[32%] mb-10">
+  <img 
+    class="rounded-3xl w-full  md:h-[55vh]"
+    src="https://i.pinimg.com/1200x/ed/9c/4f/ed9c4f1621b11333d09c49df24179108.jpg" 
+    alt=""
+  >
+  <div>
+<h4 class="font-poppins text-blue-600 text-xl  mt-10 mb-2">
+  Consulting Services
+</h4>
+<h2 class="font-poppins text-2xl font-bold leading-normal">
+  Find Expert Consulting Services
+  <span class="inline md:block">Near Me</span>
+</h2>
+  </div>
+
+  <div class="flex items-center gap-4 pt-2 mt-2">
+<button
+  class="px-12 py-3 rounded-full text-sm font-semibold text-white
+             bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+         hover:to-[#D9F0FF]
+         transition-all duration-[1500ms] ease-in-out">
+  Read More
+</button>
+   <p class="ml-auto text-gray-500">Nov 9,2025</p>
+  </div>
+</div>
 
 
+
+  <div class="rounded-3xl p-1 w-full md:w-[32%] mb-10">
+  <img 
+class="rounded-3xl w-full md:h-[55vh] object-cover"
+    src="https://i.pinimg.com/1200x/0a/34/91/0a34916b6a0095785af4a6f4bdc86bd2.jpg" 
+    alt="">
+  <div>
+    <h4 class="font-poppins text-blue-600 text-xl mt-10 mb-2">Online Delivery</h4>
+<h2 class="font-poppins text-2xl font-bold leading-normal">
+  Find the Best Online Delivery
+  <span class="inline md:block">Near Me</span>
+</h2>
+  </div>
+
+  <div class="flex items-center gap-4 pt-2 mt-2">
+<button
+  class="px-12 py-3 rounded-full text-sm font-semibold text-white
+           bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+         hover:to-[#D9F0FF]
+         transition-all duration-[1500ms] ease-in-out">
+  Read More
+</button>
+    <p class="ml-auto text-gray-500">Nov 9,2025</p>
+  </div>
+</div>
+
+
+
+  <div class="rounded-3xl p-1 w-full md:w-[32%] mb-10">
+  <img 
+    class="rounded-3xl w-full md:h-[55vh] "
+    src="https://i.pinimg.com/1200x/9a/59/50/9a59508b8703e7117daf9601405bfcb0.jpg" 
+    alt=""
+  >
+  <div>
+    <h4 class="font-poppins text-blue-600 text-xl mt-10 mb-2">Best Consultant</h4>
+<h2 class="font-poppins text-2xl font-bold leading-normal">
+  Find the Best Consultant
+  <span class="inline md:block">Near Me</span>
+</h2>
+  </div>
+
+  <div class="flex item-center gap-4 pt-2 mt-2">
+<button
+  class="px-12 py-3 rounded-full text-sm font-semibold text-white
+          bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+         hover:to-[#D9F0FF]
+         transition-all duration-[1500ms] ease-in-out">
+  Read More
+</button>
+    <p class="ml-auto text-gray-500">Nov 9,2025</p>
+  </div>
+</div>
+
+
+
+  <div class="rounded-3xl p-1 w-full md:w-[32%] mb-10">
+
+    <img class="rounded-3xl w-full md:h-[55vh]"
+     src="https://i.pinimg.com/736x/84/93/14/84931415068abd5563b62154e79da443.jpg" alt="">
+    <div>
+      <h4 class="font-poppins text-blue-600 text-xl mt-10 mb-2">CCTV Services</h4>
+<h2 class="font-poppins text-2xl font-bold leading-normal">
+  Find Trusted CCTV Services
+  <span class="inline md:block">Near Me</span>
+</h2>
+    </div>
+
+    <div class="flex item-center gap-4 pt-2 mt-2">
+<button
+  class="px-12 py-3 text-white rounded-full text-sm font-semibold
+         bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+         hover:to-[#D9F0FF]
+         transition-all duration-300">
+  Read Me
+</button>
+
+                     <p class="text-gray-500 ml-auto">Nov 9,2025</p>
+    </div>
+
+</div>
+
+
+  <div class="rounded-3xl p-1 w-full md:w-[32%] mb-10">
+
+    <img class="rounded-3xl w-full md:h-[55vh]"
+     src="https://i.pinimg.com/1200x/3c/d5/af/3cd5af78cb1e05f56e11fa3d30873235.jpg" alt="">
+    <div>
+      <h4 class="font-poppins text-blue-600 text-xl mt-10 mb-2">Water Wholesale</h4>
+<h2 class="font-poppins text-2xl font-bold leading-normal">
+  Find Realiable Water Wholesale
+  <span class="inline md:block">Near Me</span>
+</h2>
+    </div>
+
+    <div class="flex item-center gap-4 pt-2 mt-2">
+      <button class="px-12 py-3 text-white rounded-full text-sm font-semibold
+                       bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+                      hover:to-[#D9F0FF]">Read Me</button>
+                     <p class="text-gray-500 ml-auto">Nov 9,2025</p>
+    </div>
+
+</div>
+
+
+  <div class="rounded-3xl p-1 w-full md:w-[32%] mb-10">
+
+    <img class="rounded-3xl w-full md:h-[55vh]"
+     src="https://i.pinimg.com/736x/be/90/8f/be908f660726d980e7322989a1dd1bd4.jpg" alt="">
+    <div>
+      <h4 class="font-poppins text-blue-600 text-xl mt-10 mb-2">Best Stiching Center</h4>
+<h2 class="font-poppins text-2xl font-bold leading-normal">
+  Find the Nearest Stiching Centre
+  <span class="inline md:block">Near Me</span>
+</h2>
+    </div>
+
+    <div class="flex item-center gap-4 pt-2 mt-2">
+      <button class="px-12 py-3 text-white rounded-full text-sm font-semibold
+                      bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+         hover:to-[#D9F0FF]">Read Me</button>
+                     <p class="text-gray-500 ml-auto">Nov 9,2025</p>
+    </div>
+
+</div>
+
+</div>
+
+<div class="relative m-4 p-6 rounded-3xl overflow-hidden min-h-[800px] mt-20
+            border-4 border-white/80
+            shadow-lg
+            style="background-image: linear-gradient(135deg, rgba(244, 244, 244,0.07) 0%, rgba(244, 244, 244,0.07) 12.5%,rgba(211, 211, 211,0.07) 12.5%, rgba(211, 211, 211,0.07) 25%,rgba(178, 178, 178,0.07) 25%, rgba(178, 178, 178,0.07) 37.5%,rgba(145, 145, 145,0.07) 37.5%, rgba(145, 145, 145,0.07) 50%,rgba(113, 113, 113,0.07) 50%, rgba(113, 113, 113,0.07) 62.5%,rgba(80, 80, 80,0.07) 62.5%, rgba(80, 80, 80,0.07) 75%,rgba(47, 47, 47,0.07) 75%, rgba(47, 47, 47,0.07) 87.5%,rgba(14, 14, 14,0.07) 87.5%, rgba(14, 14, 14,0.07) 100%),linear-gradient(45deg, rgba(236, 236, 236,0.07) 0%, rgba(236, 236, 236,0.07) 12.5%,rgba(210, 210, 210,0.07) 12.5%, rgba(210, 210, 210,0.07) 25%,rgba(183, 183, 183,0.07) 25%, rgba(183, 183, 183,0.07) 37.5%,rgba(157, 157, 157,0.07) 37.5%, rgba(157, 157, 157,0.07) 50%,rgba(130, 130, 130,0.07) 50%, rgba(130, 130, 130,0.07) 62.5%,rgba(104, 104, 104,0.07) 62.5%, rgba(104, 104, 104,0.07) 75%,rgba(77, 77, 77,0.07) 75%, rgba(77, 77, 77,0.07) 87.5%,rgba(51, 51, 51,0.07) 87.5%, rgba(51, 51, 51,0.07) 100%),linear-gradient(90deg, #ffffff,#ffffff);">
+<div class="text-center">
+  <h2 class="font-poppins font-semibold text-4xl mt-10 leading-loose">Join Our Newsletter</h2>
+  <p class="">Subscribe to our newsettler so we can update you with service and offers.</p>
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-2 mt-6">
+  <input
+      type="search"
+      placeholder="Enter your email"
+      class="w-80 pl-12 pr-4 py-3 rounded-3xl border border-gray-300
+             focus:outline-none
+             shadow-sm text-gray-700"/>
+  <button class="py-3 px-12 text-white rounded-full text-sm font-semibold
+                 bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
+         hover:to-[#D9F0FF]">Subscribe</button>
+             </div>
+</div>
+
+</div>
+
+
+</div>
   <script>
     const btn = document.getElementById("menuBtn");
     const menu = document.getElementById("mobileMenu");
@@ -202,6 +398,5 @@
       btn.classList.toggle("open");
     });
   </script>
-</div>
 </body>
 </html>
