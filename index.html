@@ -16,6 +16,9 @@
         fontFamily: {
           poppins: ['Poppins', 'sans-serif'],
            manrope: ['Manrope', 'sans-serif'],
+          roboto: ['Roboto', 'sans-serif'],
+          inter: ['Inter', 'sans-serif'],
+
         }
       }
     }
@@ -51,7 +54,7 @@
 <body class="min-h-screen overflow-x-hidden" style="background-image: linear-gradient(135deg, rgba(49, 49, 49,0.07) 0%, rgba(49, 49, 49,0.07) 12.5%,rgba(76, 76, 76,0.07) 12.5%, rgba(76, 76, 76,0.07) 25%,rgba(102, 102, 102,0.07) 25%, rgba(102, 102, 102,0.07) 37.5%,rgba(129, 129, 129,0.07) 37.5%, rgba(129, 129, 129,0.07) 50%,rgba(155, 155, 155,0.07) 50%, rgba(155, 155, 155,0.07) 62.5%,rgba(182, 182, 182,0.07) 62.5%, rgba(182, 182, 182,0.07) 75%,rgba(208, 208, 208,0.07) 75%, rgba(208, 208, 208,0.07) 87.5%,rgba(235, 235, 235,0.07) 87.5%, rgba(235, 235, 235,0.07) 100%),linear-gradient(45deg, rgba(5, 5, 5,0.07) 0%, rgba(5, 5, 5,0.07) 12.5%,rgba(39, 39, 39,0.07) 12.5%, rgba(39, 39, 39,0.07) 25%,rgba(73, 73, 73,0.07) 25%, rgba(73, 73, 73,0.07) 37.5%,rgba(107, 107, 107,0.07) 37.5%, rgba(107, 107, 107,0.07) 50%,rgba(141, 141, 141,0.07) 50%, rgba(141, 141, 141,0.07) 62.5%,rgba(175, 175, 175,0.07) 62.5%, rgba(175, 175, 175,0.07) 75%,rgba(209, 209, 209,0.07) 75%, rgba(209, 209, 209,0.07) 87.5%,rgba(243, 243, 243,0.07) 87.5%, rgba(243, 243, 243,0.07) 100%),linear-gradient(90deg, #ffffff,#ffffff);">
   <div class=" p-2 md:p-4 lg:p-6">
 
-<div class="relative m-4 p-6 rounded-3xl overflow-hidden min-h-[600px]"
+<div class="relative m-4 p-6 rounded-3xl  ring-4 ring-white/80 overflow-hidden min-h-[600px]"
        style="background: linear-gradient(135deg, #E4EEFF,#7D99FF);">
 
     <div class="absolute inset-0 shimmer opacity-30"></div>
@@ -155,12 +158,15 @@
   </div>
 
 
-<button
-  class="w-40 md:w-36 px-6 py-3 rounded-3xl text-white font-semibold
-           bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
-         hover:to-[#D9F0FF]
-         transition-colors duration-300 ease-in-out">
-  Search
+<button class="
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
+  transition-all duration-700 ease-in-out
+  bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+  bg-[length:100%_200%] bg-top
+  hover:bg-bottom
+  hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
+  active:scale-50">
+  Read More
 </button>
 </div>
   </section>
@@ -204,13 +210,16 @@
     </p>
 
     <div class="flex items-center gap-4 pt-2">
-      <button
-        class="px-10 py-3 rounded-full text-sm font-semibold text-white
-                 bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
-         hover:to-[#D9F0FF]
-               transition-colors duration-300">
-        Read More
-      </button>
+<button class="
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
+  transition-all duration-700 ease-in-out
+  bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+  bg-[length:100%_200%] bg-top
+  hover:bg-bottom
+  hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
+  active:scale-50">
+  Read More
+</button>
 
       <p class="ml-auto text-gray-500">
         Jan 9,2025
@@ -242,11 +251,14 @@
   </div>
 
   <div class="flex items-center gap-4 pt-2 mt-2">
-<button
-  class="px-12 py-3 rounded-full text-sm font-semibold text-white
-             bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
-         hover:to-[#D9F0FF]
-         transition-all duration-[1500ms] ease-in-out">
+<button class="
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
+  transition-all duration-700 ease-in-out
+  bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+  bg-[length:100%_200%] bg-top
+  hover:bg-bottom
+  hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
+  active:scale-50">
   Read More
 </button>
    <p class="ml-auto text-gray-500">Nov 9,2025</p>
@@ -269,11 +281,14 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
   </div>
 
   <div class="flex items-center gap-4 pt-2 mt-2">
-<button
-  class="px-12 py-3 rounded-full text-sm font-semibold text-white
-           bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
-         hover:to-[#D9F0FF]
-         transition-all duration-[1500ms] ease-in-out">
+<button class="
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
+  transition-all duration-700 ease-in-out
+  bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+  bg-[length:100%_200%] bg-top
+  hover:bg-bottom
+  hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
+  active:scale-50">
   Read More
 </button>
     <p class="ml-auto text-gray-500">Nov 9,2025</p>
@@ -297,11 +312,14 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
   </div>
 
   <div class="flex item-center gap-4 pt-2 mt-2">
-<button
-  class="px-12 py-3 rounded-full text-sm font-semibold text-white
-          bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
-         hover:to-[#D9F0FF]
-         transition-all duration-[1500ms] ease-in-out">
+<button class="
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
+  transition-all duration-700 ease-in-out
+  bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+  bg-[length:100%_200%] bg-top
+  hover:bg-bottom
+  hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
+  active:scale-50">
   Read More
 </button>
     <p class="ml-auto text-gray-500">Nov 9,2025</p>
@@ -323,12 +341,15 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
     </div>
 
     <div class="flex item-center gap-4 pt-2 mt-2">
-<button
-  class="px-12 py-3 text-white rounded-full text-sm font-semibold
-         bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
-         hover:to-[#D9F0FF]
-         transition-all duration-300">
-  Read Me
+<button class="
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
+  transition-all duration-700 ease-in-out
+  bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+  bg-[length:100%_200%] bg-top
+  hover:bg-bottom
+  hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
+  active:scale-50">
+  Read More
 </button>
 
       <p class="text-gray-500 ml-auto">Nov 9,2025</p>
@@ -350,9 +371,16 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
     </div>
 
     <div class="flex item-center gap-4 pt-2 mt-2">
-      <button class="px-12 py-3 text-white rounded-full text-sm font-semibold
-                       bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
-                      hover:to-[#D9F0FF]">Read Me</button>
+    <button class="
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
+  transition-all duration-700 ease-in-out
+  bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+  bg-[length:100%_200%] bg-top
+  hover:bg-bottom
+  hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
+  active:scale-50">
+  Read More
+</button>
                      <p class="text-gray-500 ml-auto">Nov 9,2025</p>
     </div>
 
@@ -372,15 +400,149 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
     </div>
 
     <div class="flex item-center gap-4 pt-2 mt-2">
-      <button class="px-12 py-3 text-white rounded-full text-sm font-semibold
-                      bg-gradient-to-b from-[#3C49FF] to-[#2E39D8]
-         hover:to-[#D9F0FF]">Read Me</button>
+     <button class="
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
+  transition-all duration-700 ease-in-out
+  bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+  bg-[length:100%_200%] bg-top
+  hover:bg-bottom
+  hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
+  active:scale-50">
+  Read More
+</button>
                      <p class="text-gray-500 ml-auto">Nov 9,2025</p>
     </div>
 
 </div>
 
 </div>
+
+<div class="mt-20 flex items-center justify-center gap-1 sm:gap-3">
+  <p class="cursor-pointer px-2 sm:px-6 py-1.5 sm:py-3 text-xs sm:text-base font-manrope  rounded-3xl bg-white">
+    First
+  </p>
+  <ul class="flex items-center font-manrope gap-1 sm:gap-2 rounded-3xl border border-white p-1 bg-gray-50">
+    <li class="cursor-pointer text-white px-2 sm:px-4 py-1.5 sm:py-3 rounded-3xl text-center bg-black text-xs sm:text-base">
+      Previous
+    </li>
+    <li class="cursor-pointer px-2 sm:px-4 py-1.5 sm:py-3 rounded-full min-w-[30px] sm:min-w-[50px] text-center text-xs sm:text-base">1</li>
+    <li class="cursor-pointer px-2 sm:px-4 py-1.5 sm:py-3 rounded-full min-w-[30px] sm:min-w-[50px] text-center bg-[#5A8EFF] text-black text-xs sm:text-base">
+      2
+    </li>
+    <li class="cursor-pointer px-2 sm:px-4 py-1.5 sm:py-3 rounded-full min-w-[30px] sm:min-w-[50px] text-center text-xs sm:text-base">3</li>
+    <li class="cursor-pointer px-2 sm:px-4 py-1.5 sm:py-3 rounded-full min-w-[30px] sm:min-w-[50px] text-center text-xs sm:text-base">4</li>
+    <li class="cursor-pointer text-white px-2 sm:px-5 py-1.5 sm:py-3 rounded-3xl text-center bg-black text-xs sm:text-base">
+      Next
+    </li>
+  </ul>
+  <p class="cursor-pointer px-2 sm:px-6 py-1.5 sm:py-3 text-xs sm:text-base font-manrope  rounded-3xl bg-white">
+    Last
+  </p>
+</div>
+
+
+
+
+<div class="flex flex-wrap px-4 m-5 gap-6 overflow-visible md:mt-[200px] ">
+
+
+
+
+<div class="relative w-full max-w-[600px] h-[350px]
+          md:h-auto md:aspect-[600/462]
+ md:bg-gradient-to-b md:from-[#DDE8FF00] md:to-[#A4C2FF]
+ md:rounded-[40px]
+ md:border-l-[5px] md:border-r-[5px] md:border-b-[5px] md:border-white
+flex justify-center">
+
+<div class="relative w-[337px] h-[700px] mx-auto">
+  <img src="iphone2.png" class="absolute inset-0 z-20 pointer-events-none" />
+  
+  <div class="absolute top-[24px] left-[5%] w-[90%] h-[96%] overflow-hidden rounded-[2rem] z-10">
+     <video src="nmevd.mp4" autoplay muted loop class="w-full h-full object-cover"></video>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="mx-auto
+              w-full max-w-[355px] min-h-[249px]
+              md:w-full md:max-w-[750px] md:h-auto md:aspect-[750/462]
+              rounded-[40px]
+              bg-gradient-to-b from-[#DDE8FF00] to-[#A4C2FF]
+              border-l-[5px] border-r-[5px] border-b-[5px] border-white
+              flex flex-col items-center justify-center
+              px-4">
+
+
+              <h2 class="text-center font-poppins
+               text-[22px] md:text-[37px]
+               font-semibold mt-4 md:mt-20">
+      Get the App Now!
+    </h2>
+
+
+    <p class="text-center text-[14px] md:text-[16px]
+              font-medium font-manrope mt-2 md:mt-3">
+      Join thousands of users who simplified their daily file
+    </p>
+
+
+    <div class="flex flex-col sm:flex-row
+                gap-3 md:gap-6
+                justify-center mt-5 md:my-10">
+
+
+            <div class="flex items-center bg-black
+                  h-[48px] md:h-[80px]
+                  w-[150px] md:w-[200px]
+                  rounded-xl md:rounded-2xl
+                  px-3">
+        <i class="fab fa-apple text-white text-xl md:text-4xl"></i>
+        <div class="ml-2 leading-tight">
+          <p class="text-white text-[10px] md:text-sm">
+            Download on the
+          </p>
+          <h4 class="text-white font-roboto font-semibold text-sm md:text-lg">
+            App Store
+          </h4>
+        </div>
+      </div>
+
+      <div class="flex items-center bg-black
+                  h-[48px] md:h-[80px]
+                  w-[150px] md:w-[200px]
+                  rounded-xl md:rounded-2xl
+                  px-3">
+        <img src="playstore.png"
+             alt="Play Store"
+             class="h-[18px] md:h-[34px]">
+        <div class="ml-2 leading-tight">
+          <p class="text-white text-[10px] md:text-sm">
+            Download on the
+          </p>
+          <h4 class="text-white font-roboto font-semibold text-sm md:text-lg">
+            Play Store
+          </h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+
 
    <div
     class="relative m-4 mt-20 rounded-3xl overflow-hidden
@@ -391,12 +553,17 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
   >
 
     <div class="text-center px-6">
-      <h2 class="font-poppins font-semibold text-4xl mt-14 leading-loose">
-        Join Our Newsletter
-      </h2>
+<h2 class="w-full font-poppins text-center 
+           text-[20px] leading-[135%] font-semibold 
+           md:text-4xl md:leading-loose 
+           mt-14 mb-4 md:mb-0">
+  Join Our Newsletter
+</h2>
 
-      <p class="font-manrope text-[16px] leading-[150%] text-center
-                max-w-xl mx-auto text-gray-700">
+
+
+      <p class="font-manrope text-[17px] leading-[150%] text-center
+                max-w-xl mx-auto  text-gray-700 ">
         Subscribe to our newsletter so we can update you with services and offers.
       </p>
 
@@ -415,18 +582,14 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
 </div>
 
 <button class="
-  relative overflow-hidden font-medium py-3 px-10 font-manrope rounded-full text-white
+  relative overflow-hidden font-medium py-2 px-10 font-manrope rounded-full text-white
   transition-all duration-700 ease-in-out
-  
   bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
-  
   bg-[length:100%_200%] bg-top
-  
-  
   hover:bg-bottom
   hover:shadow-[0_0_0px_rgba(59,85,255,0.9)]
   active:scale-50">
-  Read More
+  Subscribe
 </button>
       </div>
     </div>
@@ -449,51 +612,66 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
 </div>
 
 
-      <p class="font-manrope text-white font-light leading-loose ml-2">
-        Helping working parents stay connected with their little ones.
+      <p class="font-manrope text-white text-center font-light leading-loose ml-2 md:text-start">
+        Helping working parents stay connected with their little ones, no matter where they are.
       </p>
 
 
-      <div class="flex gap-6 mt-10 ml-8"> <a href="https://www.instagram.com" target="_blank" class="text-white text-xl hover:text-[#C13584] transition-colors"> <i class="fab fa-instagram"></i>
+      <div class="flex gap-6 mt-10  justify-center md:justify-start md:text-start"> <a href="https://www.instagram.com" target="_blank" class="text-white text-xl hover:text-[#C13584] transition-colors"> <i class="fab fa-instagram"></i>
        </a> <a href="https://www.facebook.com" target="_blank" class="text-white text-xl hover:text-[#1877F2] transition-colors"> <i class="fab fa-facebook-f"></i> 
       </a> <a href="https://www.twitter.com" target="_blank" class="text-white text-xl hover:text-[#1DA1F2] transition-colors"> <i class="fab fa-twitter"></i> </a> 
       <a href="https://www.youtube.com" target="_blank" class="text-white text-xl hover:text-[#FF0000] transition-colors"> <i class="fab fa-youtube"></i> </a> </div>
 
     </div>
 
-    <div class="flex w-full md:w-[44%] gap-6 mt-8 md:mt-0">
+  <div class="flex flex-row w-full md:w-[44%] gap-4 mt-8 md:mt-0">
 
-      <div class="w-1/2">
-        <h2 class="text-white text-2xl font-poppins font-semibold mb-6">Quick Links</h2>
-        <ul class="space-y-4 text-white font-manrope">
-          <li>Home</li>
-          <li>About</li>
-          <li>Blogs</li>
-          <li>FAQ's</li>
-          <li>Service</li>
-          <li>Contact</li>
-        </ul>
-      </div>
 
-      <div class="w-1/2">
-        <h2 class="text-white text-2xl font-poppins font-semibold mb-6">Backend Offering</h2>
-        <ul class="space-y-4 text-white font-manrope">
-          <li>Web Development</li>
-          <li>App Development</li>
-          <li>Digital Marketing</li>
-          <li>Graphic Design</li>
-          <li>Branding</li>
-        </ul>
-      </div>
+    <div class="w-1/2">
+    <h2 class="text-white text-lg md:text-2xl font-poppins font-semibold mb-4 whitespace-nowrap text-center md:text-left">
+      Quick Links
+    </h2>
 
-    </div>
+    <ul class="space-y-5 text-white font-manrope text-center md:text-left">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">FAQ's</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
 
-<div class="w-full md:w-[22%] mt-8 md:mt-0">
+  <div class="w-1/2">
+    <h2 class="text-white text-lg md:text-2xl font-poppins font-semibold mb-4 whitespace-nowrap text-center md:text-left">
+      Backend Offering
+    </h2>
+
+    <ul class="space-y-5 text-white font-manrope text-center md:text-left">
+      <li>Web Development</li>
+      <li>App Development</li>
+      <li>Digital Marketing</li>
+      <li>Graphic Design</li>
+      <li>Branding</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div class="w-full  md:w-[22%] mt-8 md:mt-0">
 <h2 class="text-white text-2xl font-semibold font-poppins mb-6
            text-center md:text-left">
   Get in Touch
 </h2>
-<ul class="font-manrope text-white space-y-4"> <li class="flex flex-col gap-1"> <div class="flex gap-4"> <span class="font-smanrope">Email:</span> <span>info@nmeapp.in,</span> </div> <span class="ml-16">cybexeltechnologies@gmail.com</span> </li> <li class="flex flex-col gap-1"> <div class="flex gap-4"> <span class="font-manrope">Phone:</span> <span>+91 9072919991,</span> </div> <span class="ml-16">+91 9745109190</span> </li> <li class="flex flex-col gap-1"> <div class="flex gap-4"> <span class="font-manrope">Location:</span> <div class=" flex flex-col gap-0.5"> 
+<ul class="font-manrope font-light text-white space-y-4">
+   <li class="flex flex-col gap-1"> <div class="flex gap-4"> 
+    <span class="font-smanrope">Email:</span> <span>info@nmeapp.in,</span> </div>
+     <span class="ml-16">cybexeltechnologies@gmail.com</span> </li> 
+     <li class="flex flex-col gap-1"> <div class="flex gap-4"> <span class="font-manrope">Phone:</span> <span>+91 9072919991,</span> </div> 
+      <span class="ml-16">+91 9745109190</span> </li> 
+      <li class="flex flex-col gap-1"> <div class="flex gap-4"> <span class="font-manrope">Location:</span> 
+        <div class=" flex flex-col gap-0.5"> 
   <span>Kochi,</span> <span>Thiruvananthapuram,</span> 
   <span>Coimbatore, Chennai, Bengaluru,</span> <span>Dubai</span> </div> </li>
  </ul>
