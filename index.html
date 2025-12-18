@@ -27,16 +27,40 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
-    @keyframes shimmer {
-      0% { background-position: -200% center; }
-      100% { background-position: 200% center; }
-    }
-    .shimmer {
-      background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
-      background-size: 200% 100%;
-      animation: shimmer 3s infinite;
-    }
+ .bg-move-box {
+  position: relative;
+  overflow: hidden;
+}
 
+.bg-move-box::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255,255,255,0.8),
+    transparent 60%
+  );
+  animation: moveEverywhere 6s ease-in-out infinite alternate;
+}
+
+@keyframes moveEverywhere {
+  0% {
+    transform: translate(-20%, -20%);
+  }
+  25% {
+    transform: translate(20%, -10%);
+  }
+  50% {
+    transform: translate(10%, 20%);
+  }
+  75% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(20%, 20%);
+  }
+}
     .hamburger-line {
       transition: all 0.3s ease;
     }
@@ -54,7 +78,7 @@
 <body class="min-h-screen overflow-x-hidden" style="background-image: linear-gradient(135deg, rgba(49, 49, 49,0.07) 0%, rgba(49, 49, 49,0.07) 12.5%,rgba(76, 76, 76,0.07) 12.5%, rgba(76, 76, 76,0.07) 25%,rgba(102, 102, 102,0.07) 25%, rgba(102, 102, 102,0.07) 37.5%,rgba(129, 129, 129,0.07) 37.5%, rgba(129, 129, 129,0.07) 50%,rgba(155, 155, 155,0.07) 50%, rgba(155, 155, 155,0.07) 62.5%,rgba(182, 182, 182,0.07) 62.5%, rgba(182, 182, 182,0.07) 75%,rgba(208, 208, 208,0.07) 75%, rgba(208, 208, 208,0.07) 87.5%,rgba(235, 235, 235,0.07) 87.5%, rgba(235, 235, 235,0.07) 100%),linear-gradient(45deg, rgba(5, 5, 5,0.07) 0%, rgba(5, 5, 5,0.07) 12.5%,rgba(39, 39, 39,0.07) 12.5%, rgba(39, 39, 39,0.07) 25%,rgba(73, 73, 73,0.07) 25%, rgba(73, 73, 73,0.07) 37.5%,rgba(107, 107, 107,0.07) 37.5%, rgba(107, 107, 107,0.07) 50%,rgba(141, 141, 141,0.07) 50%, rgba(141, 141, 141,0.07) 62.5%,rgba(175, 175, 175,0.07) 62.5%, rgba(175, 175, 175,0.07) 75%,rgba(209, 209, 209,0.07) 75%, rgba(209, 209, 209,0.07) 87.5%,rgba(243, 243, 243,0.07) 87.5%, rgba(243, 243, 243,0.07) 100%),linear-gradient(90deg, #ffffff,#ffffff);">
   <div class=" p-2 md:p-4 lg:p-6">
 
-<div class="relative m-4 p-6 rounded-3xl  ring-4 ring-white/80 overflow-hidden h-[434px]  md:min-h-[600px]"
+<div class="relative m-4 p-6 rounded-3xl  ring-4 ring-white/80 overflow-hidden h-[434px]  md:min-h-[600px] bg-move-box"
        style="background: linear-gradient(135deg, #E4EEFF,#7D99FF);">
 
     <div class="absolute inset-0 shimmer opacity-30"></div>
@@ -82,38 +106,43 @@
       <nav class="hidden md:block backdrop-blur-xl bg-white/10 shadow-2xl rounded-full py-1 px-4 border border-white/50"
            style="width: 45%;background: linear-gradient(#DDE8FF);">
         <div class="flex items-center h-14">
-          <ul class="flex flex-grow justify-between w-full">
+          <ul class="flex flex-grow justify-between  w-full">
             <li class="flex-1 text-center">
-              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">Home</a>
+              <a href="#" class="text-black/90 hover:blur-[2px] hover:text-blue-600 hover:scale-110 transition-all inline-block">Home</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">About</a>
+              <a href="#" class="text-black/90 hover:blur-[2px] hover:text-blue-600 hover:scale-110 transition-all inline-block">About</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-blue-600 hover:text-blue-600 hover:scale-110 transition-all inline-block">Blogs</a>
+              <a href="#" class="text-blue-600 hover:blur-[2px] hover:text-blue-600 hover:scale-110 transition-all inline-block">Blogs</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">FAQ's</a>
+              <a href="#" class="text-black/90 hover:blur-[2px] hover:text-blue-600 hover:scale-110 transition-all inline-block">FAQ's</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">Service</a>
+              <a href="#" class="text-black/90 hover:blur-[2px] hover:text-blue-600 hover:scale-110 transition-all inline-block">Service</a>
             </li>
             <li class="flex-1 text-center">
-              <a href="#" class="text-black/90 hover:text-black hover:scale-110 transition-all inline-block">Contact</a>
+              <a href="#" class="text-black/90 hover:blur-[2px] hover:text-blue-600 hover:scale-110 transition-all inline-block">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
 
 
-      <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-12 h-12 rounded-xl backdrop-blur-xl bg-white/20 hover:bg-white/30 transition-all shadow-lg border border-white/30 hamburger focus:outline-none">
+      <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-12 h-12 rounded-xl backdrop-blur-xl bg-[#3C49FF] transition-all shadow-lg border border-white/30 hamburger focus:outline-none">
         <span class="hamburger-line line-1 w-6 h-0.5 bg-white rounded-full mb-1.5"></span>
         <span class="hamburger-line line-2 w-6 h-0.5 bg-white rounded-full mb-1.5"></span>
         <span class="hamburger-line line-3 w-6 h-0.5 bg-white rounded-full"></span>
       </button>
 
 
-      <button class="hidden md:flex bg-gradient-to-br from-blue-500 to-blue-500 hover:from-blue-300 hover:to-blue-400 text-white w-12 h-12 rounded-full items-center justify-center shadow-2xl hover:scale-110  border-2 border-white/30">
+      <button class="hidden md:flex   
+              transition-all duration-700 ease-in-out
+              bg-gradient-to-b from-[#4d69ff] via-[#3b55ff] to-[#D9F0FF]
+              bg-[length:100%_200%]
+              hover:bg-bottom
+             text-white w-16 h-16 rounded-full items-center justify-center shadow-2xl  border-[2px] border-white/30">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
           <path stroke-linecap="round" stroke-linejoin="round"
