@@ -54,7 +54,7 @@
 <body class="min-h-screen overflow-x-hidden" style="background-image: linear-gradient(135deg, rgba(49, 49, 49,0.07) 0%, rgba(49, 49, 49,0.07) 12.5%,rgba(76, 76, 76,0.07) 12.5%, rgba(76, 76, 76,0.07) 25%,rgba(102, 102, 102,0.07) 25%, rgba(102, 102, 102,0.07) 37.5%,rgba(129, 129, 129,0.07) 37.5%, rgba(129, 129, 129,0.07) 50%,rgba(155, 155, 155,0.07) 50%, rgba(155, 155, 155,0.07) 62.5%,rgba(182, 182, 182,0.07) 62.5%, rgba(182, 182, 182,0.07) 75%,rgba(208, 208, 208,0.07) 75%, rgba(208, 208, 208,0.07) 87.5%,rgba(235, 235, 235,0.07) 87.5%, rgba(235, 235, 235,0.07) 100%),linear-gradient(45deg, rgba(5, 5, 5,0.07) 0%, rgba(5, 5, 5,0.07) 12.5%,rgba(39, 39, 39,0.07) 12.5%, rgba(39, 39, 39,0.07) 25%,rgba(73, 73, 73,0.07) 25%, rgba(73, 73, 73,0.07) 37.5%,rgba(107, 107, 107,0.07) 37.5%, rgba(107, 107, 107,0.07) 50%,rgba(141, 141, 141,0.07) 50%, rgba(141, 141, 141,0.07) 62.5%,rgba(175, 175, 175,0.07) 62.5%, rgba(175, 175, 175,0.07) 75%,rgba(209, 209, 209,0.07) 75%, rgba(209, 209, 209,0.07) 87.5%,rgba(243, 243, 243,0.07) 87.5%, rgba(243, 243, 243,0.07) 100%),linear-gradient(90deg, #ffffff,#ffffff);">
   <div class=" p-2 md:p-4 lg:p-6">
 
-<div class="relative m-4 p-6 rounded-3xl  ring-4 ring-white/80 overflow-hidden min-h-[600px]"
+<div class="relative m-4 p-6 rounded-3xl  ring-4 ring-white/80 overflow-hidden h-[434px]  md:min-h-[600px]"
        style="background: linear-gradient(135deg, #E4EEFF,#7D99FF);">
 
     <div class="absolute inset-0 shimmer opacity-30"></div>
@@ -127,8 +127,11 @@
 <div
   id="mobileMenu"
   class="absolute md:hidden
+         left-[10px] mt-4
          w-[270px] h-[270px]
-         mt-4 left-[10px]
+
+         flex flex-col justify-center
+
          backdrop-blur-xl bg-white/20
          rounded-2xl shadow-2xl p-4 mx-6
          border border-white/20 z-30
@@ -138,8 +141,9 @@
          opacity-0
          pointer-events-none
 
-         transition-all duration-500 ease-in-out"
+         transition-all duration-300 ease-in-out"
 >
+
 
 
 <a href="#"
@@ -174,7 +178,7 @@ FAQ's</a>
     </div>
 
 <div>
-  <section class="max-w-3xl mx-auto mt-40 px-4 relative z-10 text-center">
+  <section class="max-w-3xl mx-auto mt-10 md:mt-40 px-4 relative z-10 text-center">
     <h1 class="font-poppins text-4xl md:text-5xl font-semibold text-black mb-3">
       N-ME <span class="font-poppins text-blue-600">Blog</span>
     </h1>
