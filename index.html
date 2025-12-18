@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Premium Navbar</title>
+  <title>N-me Blog</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -124,13 +124,53 @@
     </div>
 
 
-    <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-1 backdrop-blur-xl bg-white/10 rounded-2xl shadow-2xl p-4 mx-6 border border-white/20">
-      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">Home</a>
-      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">About</a>
-      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">Blogs</a>
-      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">FAQ's</a>
-      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">Service</a>
-      <a href="#" class="block text-white/90 hover:text-white hover:bg-white/10 py-3 px-4 rounded-lg transition-all">Contact</a>
+<div
+  id="mobileMenu"
+  class="absolute md:hidden
+         w-[270px] h-[270px]
+         mt-4 left-[10px]
+         backdrop-blur-xl bg-white/20
+         rounded-2xl shadow-2xl p-4 mx-6
+         border border-white/20 z-30
+
+         origin-top
+         scale-y-0
+         opacity-0
+         pointer-events-none
+
+         transition-all duration-500 ease-in-out"
+>
+
+
+<a href="#"
+   class="block text-black blur-0 hover:blur-[1.5px] hover:text-blue-600 py-2 px-4 rounded-lg transition-all duration-200">
+  Home
+</a>
+
+
+<a href="#"
+   class="block text-black blur-0 hover:blur-[1.5px] hover:text-blue-600 py-2 px-4 rounded-lg transition-all duration-200">
+About</a>
+
+<a href="#"
+   class="block text-black blur-0 hover:blur-[1.5px] hover:text-blue-600 py-2 px-4 rounded-lg transition-all duration-200">
+Blog
+</a>
+
+<a href="#"
+   class="block text-black blur-0 hover:blur-[1.5px] hover:text-blue-600 py-2 px-4 rounded-lg transition-all duration-200">
+FAQ's</a>
+
+<a href="#"
+   class="block text-black blur-0 hover:blur-[1.5px] hover:text-blue-600 py-2 px-4 rounded-lg transition-all duration-200">
+  Service
+</a>
+
+<a href="#"
+   class="block text-black blur-0 hover:blur-[1.5px] hover:text-blue-600 py-2 px-4 rounded-lg transition-all duration-200">
+  Contact
+</a>
+
     </div>
 
 <div>
@@ -711,14 +751,19 @@ class="rounded-3xl w-full md:h-[55vh] object-cover"
 
 
 </div>
-  <script>
-    const btn = document.getElementById("menuBtn");
-    const menu = document.getElementById("mobileMenu");
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
 
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-      btn.classList.toggle("open");
-    });
-  </script>
+btn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("scale-y-0");
+  mobileMenu.classList.toggle("opacity-0");
+  mobileMenu.classList.toggle("pointer-events-none");
+
+  btn.classList.toggle("open");
+});
+
+</script>
+
 </body>
 </html>
