@@ -159,7 +159,7 @@
 
          backdrop-blur-xl bg-white/20
          rounded-2xl shadow-2xl
-         border border-white/20 z-30
+         border-2 border-white/70 z-20
 
          origin-top
          scale-y-0
@@ -594,7 +594,8 @@ class="rounded-3xl w-full h-[30vh] md:h-[55vh] object-cover"
                   h-[48px] md:h-[80px]
                   w-[150px] md:w-[200px]
                   rounded-xl md:rounded-2xl
-                  px-3">
+                  px-3 cursor-pointer
+                  hover:bg-black/70">
         <i class="fab fa-apple text-white text-xl md:text-4xl"></i>
         <div class="ml-2 leading-tight">
           <p class="text-white text-[10px] md:text-sm">
@@ -611,7 +612,8 @@ class="rounded-3xl w-full h-[30vh] md:h-[55vh] object-cover"
                   h-[48px] md:h-[80px]
                   w-[150px] md:w-[200px]
                   rounded-xl md:rounded-2xl
-                  px-3">
+                  px-3 cursor-pointer
+                  hover:bg-black/70">
         <img src="playstore.png"
              alt="Play Store"
              class="h-[18px] md:h-[34px]">
@@ -722,6 +724,7 @@ class="rounded-3xl w-full h-[30vh] md:h-[55vh] object-cover"
     </h2>
 
     <ul class="space-y-5 text-white font-manrope text-center md:text-left">
+      
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Blogs</a></li>
@@ -748,23 +751,44 @@ class="rounded-3xl w-full h-[30vh] md:h-[55vh] object-cover"
 </div>
 
 
-<div class="w-full  md:w-[22%] mt-8 md:mt-0">
-<h2 class="text-white text-2xl font-semibold font-poppins mb-6
-           text-center md:text-left">
-  Get in Touch
-</h2>
-<ul class="font-manrope font-light text-white space-y-4">
-   <li class="flex flex-col gap-1"> <div class="flex gap-4"> 
-    <span class="font-smanrope">Email:</span> <span>info@nmeapp.in,</span> </div>
-     <span class="ml-16">cybexeltechnologies@gmail.com</span> </li> 
-     <li class="flex flex-col gap-1"> <div class="flex gap-4"> <span class="font-manrope">Phone:</span> <span>+91 9072919991,</span> </div> 
-      <span class="ml-16">+91 9745109190</span> </li> 
-      <li class="flex flex-col gap-1"> <div class="flex gap-4"> <span class="font-manrope">Location:</span> 
-        <div class=" flex flex-col gap-0.5"> 
-  <span>Kochi,</span> <span>Thiruvananthapuram,</span> 
-  <span>Coimbatore, Chennai, Bengaluru,</span> <span>Dubai</span> </div> </li>
- </ul>
-    </div>
+<div class="w-full md:w-[22%] mt-8 ml-6 md:mt-0 mx-auto">
+
+  <h2 class="text-white text-2xl font-semibold font-poppins mb-6 text-center md:text-left">
+    Get in Touch
+  </h2>
+
+  <ul class="font-manrope font-light text-white space-y-4">
+
+<li class="grid grid-cols-[70px_1fr] md:grid-cols-[90px_1fr] gap-0 md:gap-2 font-medium text-xs md:text-base">
+<span class="font-medium">Email:</span>
+      <div class="flex flex-col">
+        <span>info@nmeapp.in</span>
+        <span>cybexeltechnologies@gmail.com</span>
+      </div>
+    </li>
+
+<li class="grid grid-cols-[70px_1fr] md:grid-cols-[90px_1fr] gap-0 md:gap-2 font-medium text-xs md:text-base">
+      <span class="font-medium">Phone:</span>
+      <div class="flex flex-col">
+        <span>+91 9072919991</span>
+        <span>+91 9745109190</span>
+      </div>
+    </li>
+
+
+<li class="grid grid-cols-[70px_1fr] md:grid-cols-[90px_1fr] gap-0 md:gap-2 font-medium text-xs md:text-base">
+      <span class="font-medium">Location:</span>
+      <div class="flex flex-col">
+        <span>Kochi,</span>
+        <span>Thiruvananthapuram</span>
+        <span>Coimbatore,Chennai,Bengaluru</span>
+        <span>Dubai</span>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
 
   </div>
 
